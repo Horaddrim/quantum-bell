@@ -45,9 +45,9 @@
                     // Here we entangle the Qubits, 
                     // creating a quantum entanglement, so
                     // everything that happens with one qubit
-                    // will happen to the other one two,
+                    // will happen to the other one too,
                     // doesn't matter where they are.
-                    // The CNTO gate entangle the two Qubits
+                    // The CNOT gate entangle the two Qubits
                     CNOT(qubits[0], qubits[1]);
 
                     let res = M (qubits[0]);
