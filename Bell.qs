@@ -3,9 +3,9 @@
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Primitive;
 
-    operation Set (desired: Result, q1: Qubit) : ()
+    operation Set (desired: Result, q1: Qubit) : Unit
     {
-        body
+        body (...)
         {
             let current = M(q1);
             if (desired != current)
@@ -18,7 +18,7 @@
 
     operation BellTest (count : Int, initial: Result) : (Int, Int, Int)
     {
-        body
+        body(...)
         {
             // In Q# there is two types of variables, the `let` variable, which is constant, and you
             // can NEVER change it's value, and the `mutable`, which you can rebind the value through a `set` operation
